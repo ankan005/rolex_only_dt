@@ -505,3 +505,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilds/vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so:vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so \
     $(LOCAL_PATH)/prebuilds/vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so:vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so \
     $(LOCAL_PATH)/prebuilds/vendor/lib64/hw/hwcomposer.msm8937.so:vendor/lib64/hw/hwcomposer.msm8937.so
+
+export export HAVOC_BUILD_TYPE=OFFICIAL
