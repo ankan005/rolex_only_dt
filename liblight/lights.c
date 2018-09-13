@@ -253,22 +253,6 @@ set_speaker_light_locked(struct light_device_t* dev,
             if (write_int(BLUE_BLINK_FILE, blink))
                 write_int(BLUE_LED_FILE, 0);
         }
-        if (white) {
-            if (write_int(WHITE_BLINK_FILE, blink))
-                write_int(WHITE_LED_FILE, 0);
-        }
-        if (yellow) {
-            if (write_int(YELLOW_BLINK_FILE, blink))
-                write_int(YELLOW_LED_FILE, 0);
-        }
-        if (purple) {
-            if (write_int(PURPLE_BLINK_FILE, blink))
-                write_int(PURPLE_LED_FILE, 0);
-        }
-        if (cyan) {
-            if (write_int(CYAN_BLINK_FILE, blink))
-                write_int(CYAN_LED_FILE, 0);
-        }
     } else {
         write_int(RED_LED_FILE, red);
         write_int(GREEN_LED_FILE, green);
