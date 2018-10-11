@@ -246,6 +246,11 @@ VENDOR_SECURITY_PATCH := 2019-01-05
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# We modify several neverallows, so let the build proceed
+ifneq ($(TARGET_BUILD_VARIANT),user)
+SELINUX_IGNORE_NEVERALLOWS := true
+endif
+
 # Treble
 ENABLE_VENDOR_IMAGE := true
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
