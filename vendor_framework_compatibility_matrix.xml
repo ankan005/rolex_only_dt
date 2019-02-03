@@ -449,10 +449,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>android.hardware.ir</name>
+        <name>vendor.lineage.livedisplay</name>
+        <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IConsumerIr</name>
+            <name>IColor</name>
             <instance>default</instance>
         </interface>
     </hal>

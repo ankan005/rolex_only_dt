@@ -294,12 +294,13 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Perf configuration
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+# Power
+PRODUCT_PACKAGES += \
+     power.qcom
 
-# Properties
--include device/xiaomi/rolex/vendor_prop.mk
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-service
 
 # Qualcomm
 PRODUCT_COPY_FILES += \
