@@ -289,6 +289,9 @@ else
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
 
+    # Set Zram disk size to 512mb
+    echo 536870912 > /sys/block/zram0/disksize
+
     # Set parameters for 32-bit Go targets.
     if [ $MemTotal -le 1048576 ] && [ "$low_ram" == "true" ]; then
         # Disable KLMK, ALMK, PPR & Core Control for Go devices
