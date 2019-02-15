@@ -51,6 +51,7 @@ vendor.vidc.enc.narrow.searchrange=1 \
 camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
 persist.camera.HAL3.enabled=1 \
 persist.vendor.qti.telephony.vt_cam_interface=1
+camera.hal1.packagelist=com.whatsapp
 
 # CNE/DPM
 PRODUCT_PROPERTY_OVERRIDES += \
