@@ -156,7 +156,7 @@ ro.lmk.use_minfree_levels=true
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 media.msm8956hw=0 \
-mm.enable.smoothstreaming=true \
+mm.enable.sec.smoothstreaming=true\
 mmp.enable.3g2=true \
 media.aac_51_output_enabled=true \
 media.stagefright.audio.sink=280 \
@@ -266,3 +266,13 @@ ro.config.zram=true
 # Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.swap=true
+
+# Graphics
+ro.opengles.version=196610
+debug.hwui.renderer=skiagl
+
+# Display properties as per treble compliance
+vendor.gralloc.enable_fb_ubwc=1
+vendor.gralloc.disable_wb_ubwc=1
+vendor.display.disable_skip_validate=1
+vendor.display.perf_hint_window=50
