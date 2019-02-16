@@ -28,7 +28,8 @@ vendor.voice.conc.fallbackpath=deep-buffer \
 vendor.voice.path.for.pcm.voip=true \
 vendor.audio.use.dts_eagle=true \
 use.dts_eagle=true \
-hpx_send_params=1
+hpx_send_params=1 \
+persist.audio.dirac.speaker=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -51,6 +52,7 @@ vendor.vidc.enc.narrow.searchrange=1 \
 camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
 persist.camera.HAL3.enabled=1 \
 persist.vendor.qti.telephony.vt_cam_interface=1
+camera.hal1.packagelist=com.whatsapp
 
 # CNE/DPM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -155,7 +157,7 @@ ro.lmk.use_minfree_levels=true
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 media.msm8956hw=0 \
-mm.enable.smoothstreaming=true \
+mm.enable.sec.smoothstreaming=true\
 mmp.enable.3g2=true \
 media.aac_51_output_enabled=true \
 media.stagefright.audio.sink=280 \
@@ -265,3 +267,13 @@ ro.config.zram=true
 # Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.swap=true
+
+# Graphics
+ro.opengles.version=196610
+debug.hwui.renderer=skiagl
+
+# Display properties as per treble compliance
+vendor.gralloc.enable_fb_ubwc=1
+vendor.gralloc.disable_wb_ubwc=1
+vendor.display.disable_skip_validate=1
+vendor.display.perf_hint_window=50
