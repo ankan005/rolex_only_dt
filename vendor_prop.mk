@@ -263,9 +263,6 @@ ro.config.zram=true
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.swap=true
 
-# Graphics
-ro.opengles.version=196610
-debug.hwui.renderer=skiagl
 
 # Display properties as per treble compliance
 vendor.gralloc.enable_fb_ubwc=1
