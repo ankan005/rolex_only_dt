@@ -278,8 +278,7 @@ vendor/lib64/libRSDriver_adreno.so
 vendor/lib/libhdr_tm.so
 vendor/lib64/libhdr_tm.so
 
-# Graphics (SDM) - from daisy - PKQ1.180917.001.V10.0.2.0.PDLMIFJ
-vendor/lib/libscalar.so
+# Graphics (SDM) - from Nokia D1C PKQ1.181105.001
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
 -vendor/lib/libsdm-disp-vndapis.so
