@@ -166,7 +166,7 @@ ro.lmk.use_minfree_levels=true
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 media.msm8956hw=0 \
-mm.enable.sec.smoothstreaming=true\
+mm.enable.smoothstreaming=true \
 mmp.enable.3g2=true \
 media.aac_51_output_enabled=true \
 media.stagefright.audio.sink=280 \
@@ -277,13 +277,14 @@ ro.config.zram=true
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.swap=true
 
-# Graphics
-ro.opengles.version=196610
-debug.hwui.renderer=skiagl
-
-# Display properties as per treble compliance
-vendor.gralloc.enable_fb_ubwc=1
-vendor.gralloc.disable_wb_ubwc=1
-vendor.display.disable_skip_validate=1
-vendor.display.perf_hint_window=50
-
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.fha_enable=true
+    ro.sys.fw.bg_apps_limit=32
+    ro.config.dha_cached_max=16
+    ro.config.dha_empty_max=42
+    ro.config.dha_empty_init=32
+    ro.config.dha_lmk_scale=0.545
+    ro.config.dha_th_rate=2.3
+    ro.config.sdha_apps_bg_max=64
+    ro.config.sdha_apps_bg_min=8
