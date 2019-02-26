@@ -79,11 +79,9 @@ persist.debug.coresight.config=stm-events
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-debug.egl.hw=1 \
-vendor.gralloc.disable_fb_ubwc=1 \
-debug.sf.hw=1 \
-debug.sf.disable_hwc_vds=1 \
-debug.sf.latch_unsignaled=1
+debug.egl.hw=0 \
+debug.sf.hw=0 \
+debug.sf.enable_hwc_vds=1 \
 debug.sf.recomputecrop=0 \
 dev.pm.dyn_samplingrate=1 \
 persist.demo.hdmirotationlock=false \
@@ -100,6 +98,7 @@ sdm.debug.disable_skip_validate=1 \
 sdm.debug.rotator_downscale=1 \
 sdm.perf_hint_window=50 \
 qemu.hw.mainkeys=1 \
+vendor.gralloc.enable_fb_ubwc=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.perf_hint_window=50 \
 debug.hwui.use_buffer_age=false \
@@ -278,3 +277,11 @@ ro.config.zram=true
 # Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.swap=true
+
+
+# Display properties as per treble compliance
+vendor.gralloc.enable_fb_ubwc=1
+vendor.gralloc.disable_wb_ubwc=1
+vendor.display.disable_skip_validate=1
+vendor.display.perf_hint_window=50
+
