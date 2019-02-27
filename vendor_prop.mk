@@ -37,14 +37,7 @@ ro.config.vc_call_vol_steps=8 \
 ro.config.media_vol_steps=20 \
 vendor.audio.use.dts_eagle=true \
 use.dts_eagle=true \
-hpx_send_params=1 \
-persist.audio.dirac.speaker=true \
-persist.dirac.acs.controller=afm \
-persist.dirac.afm.mode=global \
-persist.dirac.acs.storeSettings=1 \
-persist.dirac.poolsize=2 \
-persist.dirac.acs.startAtBoot=1 \
-ro.audio.soundfx.dirac=true
+hpx_send_params=1
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
