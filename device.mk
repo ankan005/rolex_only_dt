@@ -447,3 +447,5 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
      WfdCommon
+
+export export HAVOC_BUILD_TYPE=Official
