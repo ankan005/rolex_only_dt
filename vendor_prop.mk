@@ -232,9 +232,7 @@ persist.vendor.radio.rat_on=combine \
 persist.vendor.radio.sib16_support=1 \
 vendor.service.qti.ims.enabled=1 \
 telephony.lteOnCdmaDevice=1 \
-vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-persist.vendor.ims.disableUserAgent=0 \
-persist.radio.calls.on.ims=1
+vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
 # RescueParty
 PRODUCT_PROPERTY_OVERRIDES += \
